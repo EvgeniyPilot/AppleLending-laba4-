@@ -1,0 +1,583 @@
+.page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 140rem;
+  margin: 0 auto;
+}
+.inn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.fl {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.jcc {
+  justify-content: center;
+}
+.fdc {
+  flex-direction: column;
+}
+.g2r {
+  gap: 2rem;
+}
+.g2r5 {
+  gap: 2.5rem;
+}
+.fww {
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0e2f55;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  z-index: 100;
+}
+footer {
+  height: 10rem;
+  background: #0e2f55;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  overflow: hidden;
+}
+.nav .li {
+  position: relative;
+  padding: 0.7rem 0;
+}
+.nav .li:after {
+  position: absolute;
+  content: '';
+  background: #fff;
+  height: 0.1rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+.nav .li:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+#about,
+#menu,
+#book  {
+  height: 90rem;
+  padding-top: 10rem;
+  overflow: hidden;
+}
+#menu,
+#book  {
+  height: auto;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+  background: url(../src/banner.jpg) center no-repeat;
+  background-size: contain;
+  color: #fff;
+  font-size: 2rem;
+  padding: 15rem 20rem;
+}
+.banner:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, .3);
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(.2rem);
+}
+.banner .title {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+.banner .subtitle {
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 2;
+}
+.banner .text {
+  font-size: 2rem;
+  max-width: 60%;
+  line-height: 120%;
+  position: relative;
+  z-index: 2;
+}
+.avards {
+  z-index: 2;
+  position: absolute;
+  bottom: 15rem;
+  right: 20rem;
+  width: 32%;
+  align-items: flex-end;
+  height: auto;
+  text-transform: uppercase;
+}
+
+#menu .title,
+#book .title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+.menu {
+  align-items: flex-start;
+}
+.m_card {
+  width: 23%;
+  height: 27rem;
+  background-color: #0e2f55;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  cursor: pointer;
+}
+.m_card .preview {
+  width: 100%;
+  height: 80%;
+  background: url(../src/iphone.jpg) center no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+.m_card:nth-child(2) .preview {
+  background: url(../src/watch.jpg) center no-repeat;
+}
+.m_card:nth-child(3) .preview {
+  background: url(../src/macbook.jpg) center no-repeat;
+}
+.m_card:nth-child(4) .preview {
+  background: url(../src/airpods.webp) center no-repeat;
+}
+.m_card:nth-child(5) .preview {
+  background: url(../src/imac.webp) center no-repeat;
+}
+.m_card:nth-child(6) .preview {
+  background: url(../src/macmini.webp) center no-repeat;
+}
+.m_card .name {
+  font-size: 2rem;
+  display: flex;
+  height: 20%;
+  align-items: center;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+}
+.m_card .name span {
+  position: relative;
+  padding: 0.7rem 0;
+}
+.m_card .name span::after {
+  position: absolute;
+  content: '';
+  height: 0.1rem;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+}
+.m_card:hover .name span::after {
+  opacity: 1;
+  visibility: visible;
+}
+#book .button {
+  padding: 1.5rem 3.5rem;
+  background: #0e2f55;
+  width: 100%;
+  max-width: max-content;
+  color: #fff;
+  margin: 5rem auto;
+  font-size: 3rem;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  cursor: pointer;
+}
+#book .button:hover {
+  background: #fff;
+  color: #0e2f55;
+}
+
+.toUp {
+  width: 5rem;
+  cursor: pointer;
+}
+
+#modal_ticket {
+  position: fixed;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .3);
+  backdrop-filter: blur(.3rem);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+}
+#modal_ticket.active  {
+  opacity: 1;
+  visibility: visible;
+}
+.modal_inner {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 100rem;
+  height: 70rem;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+  z-index: 4;
+}
+.close span {
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #0e2f55;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.close span:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  -o-transform: translate(-50%, -50%) rotate(-45deg);
+}
+.close span:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -moz-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  -o-transform: translate(-50%, -50%) rotate(45deg);
+}
+.front,
+.success,
+.denied,
+.new_time {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  bottom: 3rem;
+  right: 3rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+}
+.front.active,
+.success.active,
+.denied.active,
+.new_time.active {
+  opacity: 1;
+  visibility: visible;
+}
+.m_title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.form {
+  align-items: flex-start;
+  height: auto;
+  width: 70%;
+  margin: 0 auto;
+}
+.input {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+label {
+  position: absolute;
+  font-size: 2rem;
+  background: #fff;
+  padding: 0.5rem;
+  top: -25%;
+  left: 1.5rem;
+}
+input {
+  width: 100%;
+  padding: 1.5rem 3rem;
+  font: inherit;
+  font-size: 2rem;
+}
+.modal_inner .button {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: max-content;
+  padding: 1.5rem 3rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: #0e2f55;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+}
+.modal_inner .button:hover {
+  background: #fff;
+  color: #0e2f55;
+}
+
+.tt {
+  font-size: 4rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+.tex {
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem auto 5rem;
+  max-width: 70%;
+}
+.input.choose_products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 35px;
+}
+label.name_of_product {
+  position: relative;
+  display: inline-block;
+}
+input.checkbox_product {
+  display: inline-block;
+  width: 20px;
+}
+
+
+@media (max-width: 1024px) {
+  .container,
+  .modal_inner {
+    max-width: 70rem;
+  }
+  #about, #menu, #book {
+    height: 46rem;
+    padding-top: 6rem;
+  }
+  #menu, #book {
+    height: auto;
+  }
+  header {
+    height: 6rem;
+    font-size: 1.6rem;
+  }
+  .banner {
+    padding: 4rem;
+    font-size: 1.6rem;
+  }
+  .avards {
+    right: 4rem;
+    bottom: 4rem;
+    font-size: 1rem;
+  }
+  .m_card {
+    width: 31.4%;
+  }
+  .modal_inner {
+    height: 80%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ed421c  #0e2f55;
+  }
+  .modal_inner::-webkit-scrollbar {
+    width: .8rem;          
+  }
+ .modal_inner::-webkit-scrollbar-track {
+    background: #0e2f55;      
+  }
+  .modal_inner::-webkit-scrollbar-thumb {
+    background-color: #ed421c;
+    border: .3rem solid #0e2f55;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+  }
+  .form {
+    padding-bottom: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  .container,
+  .modal_inner {
+    max-width: 30rem;
+  }
+  header,
+  footer {
+    height: 4rem;
+    font-size: 0.7rem;
+  }
+  #about, #menu, #book {
+    height: auto;
+    padding-top: 4rem;
+  }
+  .banner {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .banner .title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .banner .subtitle {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  .banner .text {
+    font-size: 0.7rem;
+    margin-bottom: 3.2rem;
+  }
+  .avards {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: auto;
+    font-size: 0.7rem;
+  }
+  #menu .title, #book .title {
+    font-size: 2rem;
+  }
+  .m_card {
+    width: 28%;
+    height: 10rem;
+  }
+  .m_card .preview {
+    height: 70%;
+  }
+  .m_card .name {
+    font-size: 0.7rem;
+  }
+  #book .button {
+    font-size: 1.2rem;
+    margin: 3rem auto;
+  }
+  .toUp {
+    width: 2rem;
+  }
+  .form {
+    width: 100%;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  .m_title,
+  .modal_inner .button {
+    font-size: 1.2rem;
+  }
+  .close {
+    width: 2rem;
+    height: 2rem;
+  }
+  label,
+  input {
+    font-size: 1rem;
+  }
+  input {
+    padding: 1rem;
+  }
+  .tex {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+  .tt {
+    font-size: 2rem;
+  }
+}

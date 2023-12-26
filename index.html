@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продажа техники Apple</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="container">
+        <div class="inn">
+          <div class="fl jcsb">
+            <div class="logo">
+              Техника Apple Брянск
+            </div>
+            <div class="nav fl g2r5">
+              <a href="" class="li about">
+                О нас
+              </a>
+              <a href="" class="li about">
+                Каталог
+              </a>
+              <a href="" class="li about">
+                Оставить заявку
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div id="about">
+      <div class="container">
+        <div class="inn">
+          <div class="banner">
+            <div class="title">
+              №1 в продаже техники Apple в Брянске!
+            </div>
+            <div class="text">
+              Дать лучший продукт потребителю за максимально выгодную цену. Мы стараемся сделать этот мир местом, более удобным 
+              для жизни, освобождая людей от тяжелой нудной работы, помогая им добиваться большего, чем они могли сделать бы в одиночку.
+
+              Побудить людей покупать не один продукт, а целую (недорогую) экосистему продуктов. 
+
+              Мы предлагаем изделия высшего качества, которые удовлетворяют реальные потребности и представляют ценность длительного 
+              пользования за доступную цену.
+            </div>
+            <ul class="avards fl g2r fdc">
+              <li>
+                победитель "Магазин года"
+              </li>
+              <li>
+                Много постоянных клиентов
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="menu">
+      <div class="container">
+        <div class="inn">
+          <div class="title">
+            Каталог
+          </div>
+          <div class="menu fl g2r fww">
+            <div class="m_card fl fdc">
+              <div class="preview">
+              </div>
+              <div class="name">
+                <span>
+                  Iphone 15
+                </span>
+              </div>
+            </div>
+            <div class="m_card fl fdc">
+              <div class="preview">
+              </div>
+              <div class="name">
+                <span>
+                  Watch Ultra
+                </span>
+              </div>
+            </div>
+            <div class="m_card fl fdc">
+              <div class="preview">
+              </div>
+              <div class="name">
+                <span>
+                  MacBook Air
+                </span>
+              </div>
+            </div>
+            <div class="m_card fl fdc">
+              <div class="preview">
+              </div>
+              <div class="name">
+                <span>
+                  AirPods Pro 2
+                </span>
+              </div>
+            </div>
+            <div class="m_card fl fdc">
+              <div class="preview">
+              </div>
+              <div class="name">
+                <span>
+                  iMac
+                </span>
+              </div>
+            </div>
+            <div class="m_card fl fdc">
+              <div class="preview">
+              </div>
+              <div class="name">
+                <span>
+                  MacMini
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="book">
+      <div class="container">
+        <div class="inn">
+          <div class="title">
+            Планируете купить у нас товар?
+          </div>
+          <div class="button">
+            Сделать заказ
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="inn">
+          <div class="fl jcsb">
+            <div class="logo">
+              Техника Apple Брянск
+            </div>
+            <div class="contact">
+              <a href="#" onclick="{event.preventDefault(); alert('Вы позвонили в ресторан')}">Позвонить нам</a>
+            </div>
+            <div class="toUp">
+              <img src="./src/upArr.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="modal_ticket" class="">
+    <div class="modal_inner">
+      <div class="close">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="front">
+        <div class="m_title">
+          Сделать заказ
+        </div>
+        <div class="form fl fdc jcsb g2r5">
+          <div class="input">
+            <label for="name">
+              Ваше имя
+            </label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="input">
+            <label for="email">
+              Ваш e-mail
+            </label>
+            <input type="text" name="email" id="email">
+          </div>
+          <div class="input">
+            <label for="number">
+              Ваш номер телефона
+            </label>
+            <input type="text" name="number" id="number">
+          </div>
+          <div class="input choose_products ">
+            <label for="counter">
+              Выберите, что собираетесь заказывать
+            </label>
+            
+            <div>
+              <div>
+                <input class="checkbox_product" type="checkbox" name="Iphone" value="Iphone"/>
+                <label class="name_of_product" for="scales">Iphone</label>
+              </div>
+              <div>
+                <input class="checkbox_product" type="checkbox" name="Watch Ultra" value="Watch Ultra"/>
+                <label class="name_of_product" for="scales">Watch Ultra</label>
+              </div>
+              <div>
+                <input class="checkbox_product" type="checkbox" name="MacBook" value="MacBook Air"/>
+                <label class="name_of_product" for="scales">MacBook Air</label>
+              </div>
+              <div>
+                <input class="checkbox_product" type="checkbox" name="AirPods" value="AirPods Pro 2"/>
+                <label class="name_of_product" for="scales">AirPods Pro 2</label>
+              </div>
+              <div>
+                <input class="checkbox_product" type="checkbox" name="iMac" value="iMac"/>
+                <label class="name_of_product" for="scales">iMac</label>
+              </div>
+              <div>
+                <input class="checkbox_product" type="checkbox" name="MacMini" value="MacMini"/>
+                <label class="name_of_product" for="scales">MacMini</label>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            Заказать
+          </div>
+        </div>
+      </div>
+      <div class="back">
+        <div class="success">
+          <div class="tt">
+            Спасибо за заказ!
+          </div>
+          <div class="tex">
+            В скором времени наш менеджер продаж свяжется с вами!!!
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
